@@ -13,16 +13,16 @@ export const siteConfig = {
     backgroundMusic:"/background_music/Keenan Te - Rest of My Life (Wedding Version).mp3"
   },
   googleAPI:{
-    messageForm: "https://docs.google.com/forms/d/e/1FAIpQLSeZyqdEWHbpTcUO_ZxuZ9NyhJRgWxVAm2ex97M24LAS7lNmRQ/formResponse",   //done
-    message: "https://script.google.com/macros/s/AKfycbyNq1rbdZ-rn_MUp7K0f7DK90V0vbQ2H0I-cuBjJOOWJn0dTD3AvXsJaRQtzLqic2j9Wg/exec",  //done
-    guestList: "https://script.google.com/macros/s/AKfycbzTCWBhcqT5dwT11LdsnCIumD5RbDacZjuP86VCrDr7o8If-31cWhczoi3wAhczrMt5RA/exec",  //done
-    guestRequest: "https://script.google.com/macros/s/AKfycbw3nG0aqPVQQkloycJlC1klLMoHHHMdk3N2Bw3rL0j6sDFlVf_opxuSMgrjoXnv7SJr9Q/exec",   //done
-    entourage: "https://script.google.com/macros/s/AKfycbw9Xvit2LuVPMVfbvPAwZzy_g2yyB3axRLKt7DYINeriwSsmAw-ZcBfMSGeOpvc2pFp6A/exec",  //done
-    sponsors: "https://script.google.com/macros/s/AKfycbxOesICKCBZtXoejxd06pLAeBIst3o4wlKOI9HJ5QVRVNeS2fppDXV1o99-YMndSHB0JQ/exec",  //done 
-    proposalResponses: "https://script.google.com/macros/s/AKfycbyLYCJjoP7-QHfpA35rl5W2b-AySiPtw2bU64heq-VHA4OCNjUD319z9X70qoomMJKuKQ/exec", // uses entourage script with action: proposal
-    weddingDetails: "https://script.google.com/macros/s/AKfycbzlF9oLKi-CrcY66Z6i55wrW9-NF0UJUDZutw_KGEkuZJIf7do-1TLOYCijjYA18N6QSg/exec",   //done
+    messageForm: "https://docs.google.com/forms/d/e/1FAIpQLSdEleuePbXlv-zSfN_-SmkHGTSMTxTNp6CbhH_BuDpeNvRz8g/formResponse",   //done
+    message: "https://script.google.com/macros/s/AKfycbzK1g2JQZanF2G4WsEJKCI5zSe_HZlOWoOa2G4zyWeO08TBBJZqEZw1G2-3TJf3g2M_/exec",  //done
+    guestList: "https://script.google.com/macros/s/AKfycbx6R7C6_RTyavwF9sSvwfjrXQOdOrBx55o9OkJIKlzOFFjWuXwG9_aEZod2CfHQZoA3/exec",  //done
+    guestRequest: "https://script.google.com/macros/s/AKfycbzhYzTcq2eGlyl5mF8sTbvq9fjz89RxMgb45_XXSZBl9fYlpBvWuTCSTngLuKTzxFlG/exec",   //done
+    entourage: "https://script.google.com/macros/s/AKfycbwywxxvPp_KQDc0sJy1-oKfpNMZVRX1pU7w99bdEZjflVDTWTjKCHalsCcUiZOj-reM/exec",  //done
+    sponsors: "https://script.google.com/macros/s/AKfycbzIyTIj1zKRIFpzmZDT9MH2f0n3yz_YZQUmlHBofiNITkixWMsgpqlqpHsP3DoAX4a4/exec",  //done 
+    proposalResponses: "https://script.google.com/macros/s/AKfycbwHoYJhiPKcrXelSOklNMQ64R6UWrDCoN3tg4U161wMxxQMR6MCY4U1xnoSHtj4y06e/exec", // uses entourage script with action: proposal
+    weddingDetails: "https://script.google.com/macros/s/AKfycbxndi060nuIdKIUuLz6Glx77HN6CVTNIoFSj5yyiiIej-hDbUIne2r2wKTEiaB6jza7/exec",   //done
 ////google share 
-    googleShare: "https://docs.google.com/spreadsheets/d/1YyCJqiMRftgt6Z2Qzcz0usQIPvnQdCbwoAXAU3yaDsc/edit?usp=sharing", 
+    googleShare: "https://docs.google.com/spreadsheets/d/1C2_JxPs1kLGkBCx9Xiyy1SWMgJT7s-fn3BRCD66Od50/edit?usp=sharing", 
   },
   wedding: {
     date: "December 12, 2026",
@@ -142,9 +142,9 @@ Now, as they prepare to say yes before God and the people they love most, Cather
   },
   snapShare: {
     googleDriveLink:
-      "https://drive.google.com/drive/folders/1GPp6UBBGJ4eY4G9jE9Esfo2209PuEgWk?usp=sharing",
+      "https://drive.google.com/drive/folders/1OcbF6e-oefHoNO4jCQ0MldQc9iUkB2sA?usp=sharing",
     albumQR: "/QR/AlbumQR.png",
-    hashtag: ["#JohnAndAlexandriaWedding",  ],
+    hashtag: ["#JohnAndAlexandriaWedding",],
     instructions: "Please scan this QR Code and upload the photos and videos you have taken during our wedding reception. We are delighted to see your snaps too!",
   },
   accommodation: {
