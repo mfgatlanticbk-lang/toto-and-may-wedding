@@ -112,8 +112,8 @@ export function CoupleVideo() {
   const playerRef = useRef<any>(null)
   const iframeRef = useRef<HTMLIFrameElement>(null)
   const { pauseMusic, resumeMusic } = useAudio()
-  //https://youtu.be/toALhh5D9_Q
-  const videoId = "toALhh5D9_Q"
+  //https://youtu.be/ccYrtVkITsE
+  const videoId = "ccYrtVkITsE"
 
   useEffect(() => {
     if (!window.YT) {
@@ -215,7 +215,7 @@ export function CoupleVideo() {
         <div className="pointer-events-none absolute left-0 top-0 z-10">
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
-            src="/decoration/left-top-decoration.png"
+            src="/decoration/decorations/top-left-corner.png"
             alt=""
             className={CORNER_DECO_CLASS}
           />
@@ -223,26 +223,26 @@ export function CoupleVideo() {
         <div className="pointer-events-none absolute right-0 top-0 z-10">
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
-            src="/decoration/right-top-decoration.png"
+            src="/decoration/decorations/top-right-corner.png"
             alt=""
-            className={CORNER_DECO_CLASS}
+            className="block h-auto w-auto max-w-[220px] sm:max-w-[160px] md:max-w-[220px] lg:max-w-[260px]"
           />
         </div>
         <div className="pointer-events-none absolute bottom-0 left-0 z-10">
           {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img
-            src="/decoration/left-bottom-decoration.png"
+          {/* <img
+            src="/decoration/decorations/botto-left-corner.png"
             alt=""
             className={CORNER_DECO_CLASS}
-          />
+          /> */}
         </div>
         <div className="pointer-events-none absolute bottom-0 right-0 z-10">
           {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img
-            src="/decoration/right-bottom-decoration.png"
+          {/* <img
+            src="/decoration/decorations/botto-right-corner.png"
             alt=""
             className={CORNER_DECO_CLASS}
-          />
+          /> */}
         </div>
 
         <div className="relative z-20 mx-auto max-w-5xl">
@@ -298,7 +298,7 @@ export function CoupleVideo() {
                       onClick={handleThumbnailClick}
                     >
                       <Image
-                        src="/desktop-background/couple (36).webp"
+                        src="/desktop-background/couples-new (1).webp"
                         alt="Video thumbnail"
                         fill
                         className="object-cover transition-transform duration-500 group-hover:scale-[1.03]"
@@ -404,7 +404,7 @@ export function CoupleVideo() {
               </div>
               <p
                 className="font-goudy-italic mx-auto max-w-lg px-4 text-[0.75rem] leading-snug sm:text-[0.8125rem] md:text-[0.84375rem]"
-                style={{ color: palette.accent }}
+                style={{ color: palette.heading }}
               >
                 A glimpse into the moments that made our hearts one
               </p>

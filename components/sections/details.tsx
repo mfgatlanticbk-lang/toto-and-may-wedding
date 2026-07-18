@@ -153,36 +153,38 @@ const attireGuide = {
     image: "/Details/sponsors.png",
     imageAspect: "669/373",
     ladies: {
-      colors: ["#C3878C"] as const,
-      description: "Elegant dusty rose gowns",
+      colors: ["#D8B08F", "#E9C8B3", "#CFA08A"] as const,
+      description: "Champagne, Soft Beige, or Nude satin gowns with a formal, elegant silhouette",
     },
     gentlemen: {
-      colors: ["#000000", "#FFFFFF","#C3878C"] as const,
-      description: "Black suits with black pants, paired with dusty rose neckties",
+      colors: ["#111111", "#F5F5F5", "#CFA08A"] as const,
+      description: "Black formal suits with white inner shirts, complemented by champagne or nude neckties",
     },
   },
+  
   entourage: {
-    image: "/Details/entourage (4).png",
+    image: "/Details/entourage.png",
     imageAspect: "669/373",
     ladies: {
-      colors: ["#C3878C", "#ECB4BC", "#EBA7B3", "#E8B3A7"] as const,
-      description: "Dusty Rose, Blush Pink, Rose Pink, Peach",
+      colors: ["#F0B39D", "#E7A8B2", "#D89AA7", "#F3C9B4"] as const,
+      description: "Floor-length gowns in Peach, Blush Pink, Dusty Rose, or Soft Coral",
     },
     gentlemen: {
-      colors: ["#000000", "#FFFFFF"] as const,
-      description: "Black and White and ribbon tie",
+      colors: ["#B8B8B8", "#FFFFFF", "#D88C97"] as const,
+      description: "Light gray suits with white inner shirts and blush pink neckties",
     },
   },
+  
   guests: {
-    image: "/Details/guestAttire.png",
+    image: "/Details/guest.png",
     imageAspect: "677/369",
     ladies: {
-      colors: ["#C3878C", "#ECB4BC", "#EBA7B3", "#E8B3A7"] as const,
-      description: "Dusty Rose, Blush Pink ",
+      colors: ["#F0A98E", "#F2C3B9", "#E8A5A8", "#D9B08E"] as const,
+      description: "Semi-formal dresses in Peach, Blush, Champagne, or Dusty Rose",
     },
     gentlemen: {
-      colors: ["#C3878C", "#ECB4BC", "#EBA7B3", "#E8B3A7"] as const,
-      description: "Semi Formal Attire",
+      colors: ["#EFE6D6", "#D2B48C", "#C89A74", "#8B6B55"] as const,
+      description: "Semi-formal attire in neutral earth tones such as Cream, Beige, Camel, or Light Brown",
     },
   },
   guests2: {
@@ -644,10 +646,10 @@ function EventVenueCard({
 // Colors sourced from globals.css @theme inline — edit there to update everywhere
 
 const COUPLE_IMAGES = [
-  "/gallery-design/boxes (1).jpg",
-  "/gallery-design/boxes (2).jpg",
-  "/gallery-design/boxes (3).jpg",
-  "/gallery-design/Phones.jpg",
+  "/gallery-design/box (1).jpg",
+  "/gallery-design/box (2).jpg",
+  "/gallery-design/box (3).jpg",
+  "/mobile-background/couples-new (5).webp",
 ]
 
 export function Details() {
@@ -661,7 +663,7 @@ export function Details() {
 
   const ceremonyImages = siteConfig.ceremony.image
   const receptionImages = siteConfig.reception.image
-  const dressCodeColors = siteConfig.dressCode.colors.split(",").map((color) => color.trim())
+  const dressCodeColors = ["#FA9A84", "#EFCFBA", "#DCBD9E"]
 
   useEffect(() => {
     if (ceremonyImages.length <= 1) return
@@ -746,7 +748,7 @@ export function Details() {
         <div className="pointer-events-none absolute left-0 top-0 z-10">
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
-            src="/decoration/left-top-decoration.png"
+            src="/decoration/decorations/top-left-corner.png"
             alt=""
             className={CORNER_DECO_CLASS}
           />
@@ -754,15 +756,15 @@ export function Details() {
         <div className="pointer-events-none absolute right-0 top-0 z-10">
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
-            src="/decoration/right-top-decoration.png"
+            src="/decoration/decorations/top-right-corner.png"
             alt=""
-            className={CORNER_DECO_CLASS}
+            className="block h-auto w-auto max-w-[220px] sm:max-w-[160px] md:max-w-[220px] lg:max-w-[260px]"
           />
         </div>
         <div className="pointer-events-none absolute bottom-0 left-0 z-10">
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
-            src="/decoration/left-bottom-decoration.png"
+            src="/decoration/decorations/botto-left-corner.png"
             alt=""
             className={CORNER_DECO_CLASS}
           />
@@ -770,7 +772,7 @@ export function Details() {
         <div className="pointer-events-none absolute bottom-0 right-0 z-10">
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
-            src="/decoration/right-bottom-decoration.png"
+            src="/decoration/decorations/botto-right-corner.png"
             alt=""
             className={CORNER_DECO_CLASS}
           />
@@ -808,7 +810,7 @@ export function Details() {
       {/* Venue and Event Information */}
       <div className="relative z-20 max-w-5xl mx-auto px-4 sm:px-6 md:px-8 mb-8 sm:mb-10 md:mb-12 space-y-6 sm:space-y-10 md:space-y-14">
         <EventVenueCard
-          badge="Ceremony"
+          badge="Ceremony & Reception"
           images={ceremonyImages}
           activeImageIndex={currentCeremonyImageIndex}
           locationName={ceremonyVenueName}
@@ -817,7 +819,7 @@ export function Details() {
           day={siteConfig.ceremony.day}
           dateString={siteConfig.ceremony.date}
           time={siteConfig.ceremony.time}
-          venueSectionLabel="Ceremony Venue"
+          venueSectionLabel="Ceremony & Reception"
           mapsLink={ceremonyMapsLink}
           copyId="ceremony"
           fullVenue={ceremonyVenue}
@@ -826,7 +828,7 @@ export function Details() {
           onOpenMaps={openInMaps}
         />
 
-        <EventVenueCard
+        {/* <EventVenueCard
           badge="Reception"
           images={receptionImages}
           activeImageIndex={currentReceptionImageIndex}
@@ -844,7 +846,7 @@ export function Details() {
           copiedItems={copiedItems}
           onCopy={copyToClipboard}
           onOpenMaps={openInMaps}
-        />
+        /> */}
        
       </div>
 
@@ -879,7 +881,7 @@ export function Details() {
           <AttireCard
             title="Principal Sponsors"
             image={attireGuide.sponsors.image}
-            imageAspect={attireGuide.sponsors.imageAspect}
+            imageAspect={"669/373"}
             alt="Bridal party attire guide"
           >
             <div className="grid grid-cols-1 gap-5 sm:gap-6">

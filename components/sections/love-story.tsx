@@ -94,18 +94,18 @@ export function LoveStory() {
         className="relative px-4 pb-2 pt-8 text-center sm:pt-10 md:pt-12"
         style={{ background: "var(--color-welcome-bg)" }}
       >
-        <div className="pointer-events-none absolute right-0 top-0 z-10">
+        <div className="pointer-events-none  absolute right-0 top-0 z-10">
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
-            src="/decoration/right-top-decoration.png"
+            src="/decoration/decorations/top-right-corner.png"
             alt=""
-            className={CORNER_DECO_CLASS}
+            className="block h-auto w-auto max-w-[220px] sm:max-w-[160px] md:max-w-[220px] lg:max-w-[260px]"
           />
         </div>
         <div className="pointer-events-none absolute left-0 top-0 z-10">
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
-            src="/decoration/left-top-decoration.png"
+            src="/decoration/decorations/top-left-corner.png"
             alt=""
             className={CORNER_DECO_CLASS}
           />
@@ -131,15 +131,15 @@ export function LoveStory() {
   theme="light"
   layout="image-left"
   isFirst={true}
-  title="You are Invited to Celebrate With Us"
-  imageSrc="/mobile-background/couples (23).webp"
+  title="A Seat Reserved for You"
+  imageSrc="/mobile-background/couples-new (1).webp"
   text={
     <>
       <p className="mb-4">
-      Some moments are meant to be shared with the people who matter most.
+      Every wedding has its own story, but the most meaningful chapters are written with the people who choose to celebrate it together.
       </p>
       <p className="mb-4">
-      We're getting married on December 12, 2026, and we would be truly honored to have you there with us.
+      We would be honored to have you join us on August 31, 2026 at 4:00 PM, as we begin our forever at Don Jose Heights Atrium and Clubhouse.
       </p>
     </>
   }
@@ -148,15 +148,15 @@ export function LoveStory() {
 <StorySection
   theme="dark"
   layout="image-right"
-  imageSrc="/mobile-background/couples (20).webp"
-  title="For Being Here With Us"
+  imageSrc="/mobile-background/couples-new (2).webp"
+  title="The Beginning of Forever"
   text={
     <>
       <p className="mb-4">
-      Some celebrations are only truly complete with loved ones near.
+      This day marks more than a wedding—it marks the first page of a lifetime we'll write together.
       </p>
       <p className="mb-4">
-      Whether you're traveling far or coming from just around the corner, your presence will make this day all the more meaningful.
+      We hope you'll be there to witness the promises, the smiles, the happy tears, and the beautiful beginning of our next chapter.
       </p>
     </>
   }
@@ -165,18 +165,15 @@ export function LoveStory() {
 <StorySection
   theme="light"
   layout="image-left"
-  imageSrc="/mobile-background/couples (8).webp"
-  title="For the Love and Support"
+  imageSrc="/mobile-background/couples-new (4).webp"
+  title="Rooted in Love"
   text={
     <>
       <p>
-      We would not be who we are without the people who lifted us along the way.
+      Before we found each other, we were shaped by families who taught us how to love, forgive, and dream.
       </p>
       <p className="mb-4">
-      To our families and friends, thank you for your guidance, encouragement, and love that carried us to this moment.
-      </p>
-      <p className="mb-4">
-      Every kind word, every gesture of support, has shaped this day in ways words can hardly capture.
+      Today, those separate paths become one, surrounded by the people whose love brought us to this moment.
       </p>
     </>
   }
@@ -185,15 +182,15 @@ export function LoveStory() {
 <StorySection
   theme="dark"
   layout="image-right"
-  imageSrc="/mobile-background/couples (10).webp"
-  title="Becoming Family"
+  imageSrc="/mobile-background/couples-new (5).webp"
+  title="Witness Our Promise"
   text={
     <>
       <p>
-      This day isn't just about the two of us—it's about all of us.
+      A wedding lasts for a day, but the vows spoken will guide us for a lifetime.
       </p>
       <p className="mb-4">
-      To both of our families coming together, thank you for welcoming us with open arms. We're honored to now call each other family.
+      Having you witness this sacred promise will make our commitment even more meaningful, knowing it is shared with those closest to our hearts.
       </p>
     </>
   }
@@ -203,31 +200,32 @@ export function LoveStory() {
   theme="light"
   layout="image-left"
   isLast={true}
-  imageSrc="/mobile-background/couples (16).webp"
-  title="Mark Your Calendars"
+  imageSrc="/mobile-background/couples-new (6).webp"
+  title="Let Us Celebrate Together"
   text={
     <>
       <p>
-      December 12, 2026 will be a day we'll always treasure.
+      Once the vows have been spoken, the celebration begins.
       </p>
       <p className="mb-4">
-      We can't wait to celebrate this milestone surrounded by the people we love most—thank you for being one of them.
+      We can't wait to laugh, dine, dance, and create unforgettable memories with everyone who has been part of our journey.
       </p>
     </>
   }
 />
+
 <StorySection
   theme="dark"
   layout="image-right"
-  imageSrc="/mobile-background/couples (5).webp"
-  title="With Gratitude, Always"
+  imageSrc="/mobile-background/couples-new (7).webp"
+  title="A Memory We Will Always Treasure"
   text={
     <>
       <p>
-      Words can only say so much, but our gratitude runs deep.
+      Years from now, we'll look back on our wedding photographs and remember every smile that surrounded us.
       </p>
       <p className="mb-4">
-      Thank you for your love, your blessings, and for being part of our lives on this special day. We carry your presence with us always.
+      Knowing you were there will forever remind us that our happiest day was shared with the people we love most.
       </p>
     </>
   }
@@ -237,15 +235,15 @@ export function LoveStory() {
   theme="light"
   layout="image-left"
   isLast={true}
-  imageSrc="/mobile-background/couples (6).webp"
-  title="Thank You for Being Part of Our Family"
+  imageSrc="/gallery-design/box (2).jpg"
+  title="Until We Meet at the Aisle"
   text={
     <>
       <p>
-      Every celebration is made richer by the people who show up for it.
+      Thank you for taking a place in our story.
       </p>
       <p className="mb-4">
-      Thank you, from the bottom of our hearts, for being here, for your love, and for being part of our family.
+      We look forward to welcoming you on August 31, 2026, and celebrating a day filled with love, joy, and the beginning of forever.
       </p>
     </>
   }
@@ -254,18 +252,18 @@ export function LoveStory() {
         className="relative px-4 pb-16 pt-8 text-center sm:pb-20 sm:pt-10 md:pb-24 md:pt-12"
         style={{ background: "var(--color-welcome-bg)" }}
       >
-        <div className="pointer-events-none absolute bottom-0 left-0 z-10">
+        <div className="pointer-events-none absolute bottom-0 left-0 z-20">
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
-            src="/decoration/left-bottom-decoration.png"
+            src="/decoration/decorations/botto-left-corner.png"
             alt=""
             className={CORNER_DECO_CLASS}
           />
         </div>
-        <div className="pointer-events-none absolute bottom-0 right-0 z-10">
+        <div className="pointer-events-none absolute bottom-0 right-0 z-20">
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
-            src="/decoration/right-bottom-decoration.png"
+            src="/decoration/decorations/botto-right-corner.png"
             alt=""
             className={CORNER_DECO_CLASS}
           />

@@ -118,7 +118,7 @@ export const StorySection: React.FC<StorySectionProps> = ({
           >
             {title && (
               <h2
-                className={`${theSeasons.className} mb-3 text-lg uppercase leading-tight tracking-[0.08em] transition-all delay-500 duration-1000 sm:text-2xl md:mb-6 md:text-3xl md:tracking-[0.12em] lg:text-4xl ${isVisible ? "translate-y-0 opacity-100" : "translate-y-10 opacity-0"} `}
+                className={`${theSeasons.className} mb-3 text-xl uppercase leading-tight tracking-[0.08em] transition-all delay-500 duration-1000 sm:mb-4 sm:text-2xl sm:tracking-[0.1em] md:mb-6 md:text-3xl md:tracking-[0.12em] lg:text-4xl ${isVisible ? "translate-y-0 opacity-100" : "translate-y-10 opacity-0"} `}
                 style={{ color: isDark ? lightBg : "var(--color-welcome-navy)" }}
               >
                 {title}
@@ -126,7 +126,7 @@ export const StorySection: React.FC<StorySectionProps> = ({
             )}
 
             <div
-              className={`font-goudy-italic space-y-3 text-[0.75rem] leading-[1.62] transition-all delay-700 duration-1000 sm:space-y-4 sm:text-[0.8125rem] sm:leading-[1.65] md:space-y-6 md:text-[0.84375rem] ${isVisible ? "translate-y-0 opacity-100" : "translate-y-10 opacity-0"} `}
+              className={`font-goudy-italic space-y-3 text-[0.8125rem] leading-[1.62] transition-all delay-700 duration-1000 sm:space-y-4 sm:text-[0.875rem] sm:leading-[1.65] md:space-y-6 md:text-[0.9375rem] lg:text-base lg:leading-[1.7] ${isVisible ? "translate-y-0 opacity-100" : "translate-y-10 opacity-0"} `}
             >
               {text}
             </div>

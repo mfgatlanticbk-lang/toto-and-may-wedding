@@ -136,34 +136,34 @@
   --font-sans: "Inter", "Inter Fallback";
   /* Updated serif font to Great Vibes */
   --font-serif: "Great Vibes", "Great Vibes Fallback";
-
+  
   /* ─── Motif palette — edit here, affects every component ─── */
   /* Background */
-  --color-motif-cream:   #FFF9F8; /* text couple and the background section */
-
+  --color-motif-cream:   #FFF8F5; /* text couple and the background section */
+  
   /* Primary Highlight */
-  --color-motif-yellow:  #F9E8DC; /* nothing changes see */
-
+  --color-motif-yellow:  #EFCFBA; /* nothing changes see */
+  /* FA9A84 */
   /* Secondary */
-  --color-motif-soft:    #F7DCE2; /* nothing changes see*/
-  --color-motif-accent:  #CDA5AF; /* nothing changes see */
-
+  --color-motif-soft:    #F5E6DA; /* nothing changes see*/
+  --color-motif-accent:  #FA9A84; /* nothing changes see */
+  
   /* Primary Brand */
-  --color-motif-deep:    #9F6B78; /* Navbar background. */
-  --color-motif-medium:  #E8CDD2; /* just a line below the navbar border  */
-
+  --color-motif-deep:    #9A5C49; /* Navbar background. */
+  --color-motif-medium:  #E7C9B5; /* just a line below the navbar border  */
+  
   /* Neutral */
-  --color-motif-silver:  #FDFBFA; /* nothing changes see  */
-
+  --color-motif-silver:  #FCFAF8; /* nothing changes see  */
+  
   /* Welcome section */
   --color-welcome-bg:        color-mix(in srgb, var(--color-motif-cream) 38%, white); /* background color */
   --color-welcome-bg-soft:   color-mix(in srgb, var(--color-motif-cream) 22%, white); /* background color */
-  --color-welcome-text:      #55494D; /* color to change paragraph text  */
-  --color-welcome-text-soft: #86787C;  /* nothing changes see */
-  --color-welcome-heading:   #9F6B78; /* color to change heading text but the smaller one. */
-  --color-welcome-script:    #B88793; /* nothing changes see */
-  --color-welcome-navy:      #724A56; /* color to change BIG HEADER  */
-  --color-welcome-green:     #D88FA1; /* avatar, button and below header */
+  --color-welcome-text:      #55443E; /* color to change paragraph text  */
+  --color-welcome-text-soft: #8A756D;  /* nothing changes see */
+  --color-welcome-heading:   #9A5C49; /* color to change heading text but the smaller one. */
+  --color-welcome-script:    #C8826A; /* nothing changes see */
+  --color-welcome-navy:      #7C4536; /* color to change BIG HEADER  */
+  --color-welcome-green:     #FA9A84; /* avatar, button and below header */
   /* ─────────────────────────────────────────────────────────── */
   --font-imperial-script: "Imperial Script", cursive;
   --font-beautiful-malera: "Beautiful Malera", cursive;

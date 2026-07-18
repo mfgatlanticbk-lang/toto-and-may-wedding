@@ -9,15 +9,17 @@ import { parseWeddingDate } from "@/lib/wedding-date"
 import Image from "next/image"
 
 const desktopBackgroundSrcs: readonly string[] = [
-  '/desktop-background/couple (1).webp',
-  '/desktop-background/couple (2).webp',
-  '/desktop-background/couple (3).webp',
-  '/desktop-background/couple (4).webp',
-  '/desktop-background/couple (5).webp',
+  '/desktop-background/couples-new (1).webp',
+  '/desktop-background/couples-new (2).webp',
+  '/desktop-background/couples-new (3).webp',
+  '/desktop-background/couples-new (4).webp',
+  '/desktop-background/couples-new (5).webp',
 ]
 
 const mobileBackgroundSrcs: readonly string[] = [
-'/mobile-background/couples (10).webp',
+'/mobile-background/couples-new (1).webp',
+'/mobile-background/couples-new (5).webp',
+'/mobile-background/couples-new (7).webp',
 ]
 
 const SHOW_BUTTERFLIES = false
@@ -559,8 +561,8 @@ export function Hero() {
             className="w-full max-w-[min(90vw,22rem)] sm:max-w-md md:max-w-lg lg:max-w-xl xl:max-w-2xl aspect-[528/473] mx-auto drop-shadow-2xl"
             style={{
               backgroundColor: "var(--color-motif-cream)",
-              WebkitMaskImage: "url(/decoration/coupleName.png)",
-              maskImage: "url(/decoration/coupleName.png)",
+              WebkitMaskImage: "url(/Details/couplename.png)",
+              maskImage: "url(/Details/couplename.png)",
               WebkitMaskSize: "contain",
               maskSize: "contain",
               WebkitMaskRepeat: "no-repeat",

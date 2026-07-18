@@ -37,23 +37,21 @@ const hex = {
 
 
 const desktopImages: string[] = [
-  '/desktop-background/couples (10).webp',
-  '/desktop-background/couples (4).webp',
-  '/desktop-background/couples (2).webp',
-  '/desktop-background/couples (1).webp',
-  '/desktop-background/couples (7).webp',
+  '/desktop-background/couples-new (1).webp',
+  '/desktop-background/couples-new (2).webp',
+  '/desktop-background/couples-new (3).webp',
+  '/desktop-background/couples-new (4).webp',
+  '/desktop-background/couples-new (5).webp',
 ];
 
 const mobileImages: string[] = [
-'/mobile-background/couples (1).webp',
-'/mobile-background/couples (3).webp',
-'/mobile-background/couples (6).webp',
-'/mobile-background/couples (10).webp',
-'/mobile-background/couples (9).webp',
-'/mobile-background/couples (13).webp',
-'/mobile-background/couples (18).webp',
-'/mobile-background/couples (20).webp',
-'/mobile-background/couples (23).webp',
+'/mobile-background/couples-new (1).webp',
+'/mobile-background/couples-new (2).webp',
+'/mobile-background/couples-new (4).webp',
+'/mobile-background/couples-new (5).webp',
+'/mobile-background/couples-new (6).webp',
+'/mobile-background/couples-new (7).webp',
+
 ];
 
 export const Hero: React.FC<HeroProps> = ({ onOpen, visible }) => {
@@ -190,9 +188,9 @@ export const Hero: React.FC<HeroProps> = ({ onOpen, visible }) => {
             {/* Monogram Image with subtle animation */}
             <div 
               className="relative w-28 h-28 sm:w-36 sm:h-36 md:w-44 md:h-44 transition-transform duration-700 ease-out hover:scale-105"
-              style={{
-                animation: contentVisible ? 'gentleFloat 3s ease-in-out infinite' : 'none'
-              }}
+              // style={{
+              //   animation: contentVisible ? 'gentleFloat 3s ease-in-out infinite' : 'none'
+              // }}
             >
               <Image
                 src={siteConfig.couple.monogram}
@@ -248,7 +246,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpen, visible }) => {
               contentVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
             }`}
             style={{
-              backgroundColor: palette.deep,   // champagne gold
+              backgroundColor: palette.accent,   // champagne gold
               borderColor: palette.medium,        // classic beige border
               color: palette.cream,                // warm brown text
             }}

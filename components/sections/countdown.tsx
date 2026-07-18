@@ -8,6 +8,7 @@ import localFont from "next/font/local"
 import { useSiteConfig } from "@/hooks/use-site-config"
 import Counter from "@/components/Counter"
 import { CloudinaryImage } from "@/components/ui/cloudinary-image"
+import { parseWeddingDate } from "@/lib/wedding-date"
 
 interface TimeLeft {
   days: number
@@ -161,10 +162,12 @@ export function Countdown() {
   const siteConfig = useSiteConfig()
   const ceremonyDate = siteConfig.ceremony.date
   const ceremonyTimeDisplay = siteConfig.ceremony.time
-  const [ceremonyMonth = "June", ceremonyDayRaw = "7", ceremonyYear = "2026"] = ceremonyDate.split(" ")
-  const ceremonyDayNumber = ceremonyDayRaw.replace(/[^0-9]/g, "") || "7"
+  const parsedDate = parseWeddingDate(ceremonyDate)
+  const ceremonyMonth = parsedDate.month
+  const ceremonyDayNumber = parsedDate.day
+  const ceremonyYear = parsedDate.year
   const { brideNickname, groomNickname } = siteConfig.couple
-  const ceremonyDay = siteConfig.ceremony.day || "Thursday"
+  const ceremonyDay = siteConfig.ceremony.day || parsedDate.dayOfWeek
   const ceremonyDayShort = ceremonyDay.slice(0, 3).toUpperCase()
   // Parse the date: December 20, 2025 at 10:30 AM PH Time (GMT+0800)
   // Extract time from "10:30 A.M., PH Time" -> "10:30 A.M."
@@ -177,8 +180,9 @@ export function Countdown() {
     "May": "05", "June": "06", "July": "07", "August": "08",
     "September": "09", "October": "10", "November": "11", "December": "12"
   }
-  const monthNum = monthMap[ceremonyMonth] || "12"
-  const dayNum = ceremonyDayNumber.padStart(2, "0")
+  const monthNum =
+    monthMap[ceremonyMonth.charAt(0) + ceremonyMonth.slice(1).toLowerCase()] || "12"
+  const dayNum = ceremonyDayNumber
   
   // Parse time: "3:00 PM" -> 15:00
   const timeMatch = timeStr.match(/(\d+):(\d+)\s*(AM|PM)/i)
@@ -363,7 +367,7 @@ export function Countdown() {
                       <span
                         className={`${cinzel.className} relative text-[3rem] font-bold leading-none tracking-wider sm:text-[4.5rem] md:text-[5.5rem] lg:text-[6rem]`}
                       >
-                        {ceremonyDayNumber.padStart(2, "0")}
+                        {ceremonyDayNumber}
                       </span>
                     </div>
 

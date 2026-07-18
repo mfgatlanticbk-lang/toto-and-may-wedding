@@ -5,11 +5,11 @@ import {
 
 export const siteConfig = {
   couple: {
-    bride: "Alexandria G. Desuyo", //Noenyl Bryle M. Gonzaga
-    brideNickname: "Alexandria", //Ltryl
-    groom: "John Wendell G. Talagtag", //Ltryl B. Benitez
-    groomNickname: "John",
-    monogram:"/monogram/monogram.png" ,//Ltryl
+    bride: "May Manalo", //Noenyl Bryle M. Gonzaga
+    brideNickname: "May", //Ltryl
+    groom: "Toto Irinco", //Ltryl B. Benitez
+    groomNickname: "Toto",
+    monogram:"/monogram/new-monogram.png" ,//Ltryl
     backgroundMusic:"/background_music/Keenan Te - Rest of My Life (Wedding Version).mp3"
   },
   googleAPI:{
@@ -25,9 +25,9 @@ export const siteConfig = {
     googleShare: "https://docs.google.com/spreadsheets/d/1C2_JxPs1kLGkBCx9Xiyy1SWMgJT7s-fn3BRCD66Od50/edit?usp=sharing", 
   },
   wedding: {
-    date: "December 12, 2026",
-    time: "3:00 PM",
-    venue: "Primus Hotel and Resort",
+    date: "August 31,2026",
+    time: "4:00 PM",
+    venue: "Don Jose Heights Atrium and Clubhouse",
     tagline: "are getting married!",
     theme: "Our wedding palette is inspired by timeless elegance and warmth.Motif Colors: Champagne Gold, Soft Beige, Warm Soft Brown",
     motif: "#BBCED5, #B9C3A8, #F3D8C5, #D1C4D4, #ECD8BA, #F4E8D8, #E1DCCF",
@@ -40,40 +40,40 @@ export const siteConfig = {
   },
   details: {
     rsvp: {
-      deadline: "November 30, 2026",
-      coordinator: "GO Events",
-      phone: "0916 872 7621",
+      deadline: "August 20, 2026",
+      // coordinator: "Ltryl B. Benitez",
+      phone: "09455801039",
     },
   },
   contact: {
-    bridePhone: "+63 956 482 5255",
-    groomPhone: "",
-    email: "",
+    bridePhone: "+63 945 580 1039",
+    groomPhone: "+63 945 580 1039",
+    email: "maymanalo009@gmail.com",
   },
   giftRegistry: {
     QR_1:{
     id: "Gcash",
     src: "/QR/Gcash.png",
     label: "Gcash",
-    accountNumber: "AL********A D.",
+    accountNumber: "May Manalo",
     },
-    QR_2:{
-    id: "GOtyme Bank",
-    src: "/QR/GOtyme.png",
-    label: "GOtyme Bank",
-    accountNumber: "John Wendel Talagtag",
-    }
+    // QR_2:{
+    // id: "GOtyme Bank",
+    // src: "/QR/GOtyme.png",
+    // label: "GOtyme Bank",
+    // accountNumber: "John Wendel Talagtag",
+    // }
   },
   ceremony: {
-    location: "Primus Hotel and Resort - Primavera Garden",
-    venue: "Caceres Heights Subdivision, KM 9, Pacol Road, Brgy. Pacol, Naga City, Camarines Sur",
-    map: "https://maps.app.goo.gl/rmudeAwUsF5hmCq78",
-    date: "December 12, 2026",
+    location: "Don Jose Heights Atrium and Clubhouse",
+    venue: "Doña Carmen Ave. Don Jose Heights Subd. Brgy. Commonwealth, Quezon City, Philippines",
+    map: "https://maps.app.goo.gl/6Uo3aPZHLPf4DmNAA",
+    date: "August 31, 2026",
     day: "Saturday",
-    time: "3:00 PM",
-    entourageTime: "2:00 PM",
-    guestsTime: "2:30 PM",
-    image: ["/Details/ceremony1.png", "/Details/ceremony2.png"],
+    time: "4:00 PM",
+    entourageTime: "3:00 PM",
+    guestsTime: "3:30 PM",
+    image: ["/Details/ceremony.png", "/Details/ceremony2.png", "/Details/ceremony3.png"],
   },
   reception: {
     location: "Primus Hotel and Resort - Peñafrancia Hall",
@@ -82,7 +82,7 @@ export const siteConfig = {
     date: "December 12, 2026",
     day: "Saturday",
     time: "6:00 PM",
-    image: ["/Details/reception1.png", "/Details/reception2.png","/Details/reception3.png"],
+    image: ["/Details/reception1.webp", "/Details/reception2.webp","/Details/reception3.webp"],
   },
   dressCode: {
       theme: "STRICTLY FORMAL",
@@ -144,7 +144,7 @@ Now, as they prepare to say yes before God and the people they love most, Cather
     googleDriveLink:
       "https://drive.google.com/drive/folders/1OcbF6e-oefHoNO4jCQ0MldQc9iUkB2sA?usp=sharing",
     albumQR: "/QR/AlbumQR.png",
-    hashtag: ["#JohnAndAlexandriaWedding",],
+    hashtag: ["#TOTOallyMAYdForEachOther",],
     instructions: "Please scan this QR Code and upload the photos and videos you have taken during our wedding reception. We are delighted to see your snaps too!",
   },
   accommodation: {
