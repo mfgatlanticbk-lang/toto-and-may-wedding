@@ -28,7 +28,7 @@ export const siteConfig = {
     date: "August 31,2026",
     time: "4:00 PM",
     venue: "Don Jose Heights Atrium Hall",
-    tagline: "are getting married!",
+    tagline: "are getting married!!!!!",
     theme: "Our wedding palette is inspired by timeless elegance and warmth.Motif Colors: Champagne Gold, Soft Beige, Warm Soft Brown",
     motif: "#BBCED5, #B9C3A8, #F3D8C5, #D1C4D4, #ECD8BA, #F4E8D8, #E1DCCF",
   },
