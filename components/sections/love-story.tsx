@@ -212,7 +212,7 @@ export function LoveStory() {
   layout="image-left"
   isLast={true}
   imageSrc="/LoveStory/story seven.webp"
-  title="Written by God's Perfect Timing"
+  title="Written by Gods Perfect Timing"
   text={
     <>
       <p className="mb-4">
