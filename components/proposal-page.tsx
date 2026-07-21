@@ -641,7 +641,7 @@ function ProposalAskSection({
 
   return (
     <div className="relative mx-auto mt-0 w-full sm:mt-10">
-      {coAttendants.length > 0 && (
+      {/* {coAttendants.length > 0 && (
         <div
           className="mx-auto mb-8 max-w-lg space-y-3 rounded-xl px-5 py-4 text-center sm:px-6 sm:py-5"
           style={{ border: `1px solid ${BORDER_SOFT}`, backgroundColor: INNER_SURFACE }}
@@ -665,7 +665,7 @@ function ProposalAskSection({
             ))}
           </div>
         </div>
-      )}
+      )} */}
 
       <div
         className="relative pt-2 sm:pt-12"
