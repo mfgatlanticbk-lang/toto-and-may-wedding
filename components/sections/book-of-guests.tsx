@@ -571,7 +571,7 @@ export function BookOfGuests() {
                           style={chipSecondaryStyle}
                         >
                           {guest.tableNumber && guest.tableNumber.trim() !== "" ? (
-                            <>Table {guest.tableNumber}</>
+                            <> {guest.tableNumber}</>
                           ) : (
                             <span className="opacity-65">No Table Yet</span>
                           )}
